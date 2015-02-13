@@ -1,0 +1,24 @@
+<center>
+<div id="board">
+  <p id="game_id" value="/result/<%= @game.id%>">Game <%= @game.id%> </p>
+  <p hidden id="hide" ><%= @game.id%></p>
+  <p id="player" name="<%=@player%>" >Welcome <%= @player%></p>
+    <table>
+      <tr id="row1">
+        <td class="square"   name="0"></td>
+        <td class="square v" name="1"></td>
+        <td class="square"   name="2"></td>
+      </tr>
+      <tr id="row2">
+        <td class="square h"   name="3"></td>
+        <td class="square v h" name="4"></td>
+        <td class="square h"   name="5"></td>
+      </tr>
+      <tr id="row3">
+        <td class="square"   name="6"></td>
+        <td class="square v" name="7"></td>
+        <td class="square"   name="8"></td>
+      </tr>
+    </table>
+  </div>
+  <center>

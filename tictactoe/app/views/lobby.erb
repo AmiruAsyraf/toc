@@ -1,0 +1,13 @@
+<div class="container">
+<p>Welcome <%= @user.username %>!</p>
+
+  <p>Available Rooms!</p>
+
+   <% @list_games.each do |c| %>
+       <p> <a href="/board/<%= c.id %>">Room : <%=  c.id %></a> One player waiting..</p>
+    <% end %>
+
+  <a href= "/room" >Create new room</a>
+</div>
+
+<div class="container">  <a href= "/signout" >Log out</a></div>
